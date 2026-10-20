@@ -1,8 +1,8 @@
 // What the page and /api/cert need to know about the coin. mint, programId and buyUrl stay null until launch;
 // the page hides name, ticker, contract address and buy link while they are null.
 export const CONFIG = {
-  name: "Ometto",
-  ticker: "OMETTO",      // shown with a $
+  name: "Alpen",
+  ticker: "ALPEN",      // shown with a $
   mint: null,            // the coin's mint address on mainnet
   programId: null,       // the Chamada program on mainnet (record PDA ["chamada", mint])
   network: "mainnet-beta",

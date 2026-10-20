@@ -206,7 +206,7 @@ export function omettoMarkup({ pal = null, glow = false, face = "o_o", z = false
       `<text class="z z1" x="${f1(OM.cx + OM.rx * 0.86)}" y="${f1(OM.cy - OM.ry * 0.62)}"${pal ? ` font-size="15"` : ""}>z</text>` +
       `<text class="z z2" x="${f1(OM.cx + OM.rx * 0.86 + 12)}" y="${f1(OM.cy - OM.ry * 0.62 - 15)}"${pal ? ` font-size="11"` : ""}>z</text></g>`
     : "";
-  const btn = interactive ? ` role="button" tabindex="0" aria-label="Ometto, the top stone"` : "";
+  const btn = interactive ? ` role="button" tabindex="0" aria-label="Alpen, the top stone"` : "";
   return `<g class="om"${btn}><g class="om-tilt"><g class="om-hop"><g class="om-bob">` + halo +
     `<clipPath id="om-clip"><path d="${d}"/></clipPath>` +
     `<path${A("om-stone", pal?.neon)} d="${d}"/>` +
@@ -279,7 +279,7 @@ export class Ometto {
     root.classList.toggle("few", shape.mode === "few");
     root.classList.toggle("many", shape.mode === "many");
     root.style.setProperty("--ar", `${V.w} / ${V.h}`);
-    root.innerHTML = `<svg class="fig-svg" viewBox="0 0 ${V.w} ${V.h}" role="group" aria-label="Ometto on his cairn. One pebble per validator, biggest stake at the top">` +
+    root.innerHTML = `<svg class="fig-svg" viewBox="0 0 ${V.w} ${V.h}" role="group" aria-label="Alpen on his cairn. One pebble per validator, biggest stake at the top">` +
       cairnMarkup(shape, { interactive: true }) + omettoMarkup({ face: this.shown, interactive: true }) + `</svg>` +
       `<div class="marks" aria-hidden="true"><span class="tag" hidden></span></div>`;
     this.svg = root.firstElementChild;

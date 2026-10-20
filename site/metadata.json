@@ -1,10 +1,15 @@
 {
-  "name": "Ometto",
-  "symbol": "OMETTO",
-  "description": "Ometto is the top stone of a cairn of Solana validators, one pebble each, ranked by stake. The pebbles light for the validators that sign Alpenglow's genesis certificate, and anyone can seal that certificate into this coin's record on chain.",
+  "name": "Alpen",
+  "symbol": "ALPEN",
+  "description": "Alpen is the top stone of a cairn of Solana validators, one pebble each, ranked by stake. The pebbles light for the validators that sign Alpenglow's genesis certificate, and anyone can seal that certificate into this coin's record on chain.",
   "image": "/token.png",
   "properties": {
     "category": "image",
-    "files": [{ "uri": "/token.png", "type": "image/png" }]
+    "files": [
+      {
+        "uri": "/token.png",
+        "type": "image/png"
+      }
+    ]
   }
 }
