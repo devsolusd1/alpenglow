@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ometto</title>
+<meta name="description" content="A neon stone on a cairn of Solana validators, one pebble each, lit when they sign Alpenglow&#39;s genesis certificate. Check it in your browser.">
+<meta name="theme-color" content="#ffffff">
+<!-- Sharing. The image addresses are root-relative until the domain is known; set siteUrl in config.js
+     and run node site-tools/set-domain.mjs to make them absolute (and add og:url). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ometto">
+<meta property="og:title" content="Ometto">
+<meta property="og:description" content="A neon stone on a cairn of Solana validators, one pebble each, lit when they sign Alpenglow&#39;s genesis certificate. Check it in your browser.">
+<meta property="og:image" content="/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ometto, a neon green stone with the face &gt;_0 typed on it, on a small cairn, beside the words: Every validator adds a stone.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ometto">
+<meta name="twitter:description" content="A neon stone on a cairn of Solana validators, one pebble each, lit when they sign Alpenglow&#39;s genesis certificate.">
+<meta name="twitter:image" content="/og.png">
+<meta name="twitter:image:alt" content="Ometto, a neon green stone with the face &gt;_0 typed on it, on a small cairn, beside the words: Every validator adds a stone.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/token.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=JetBrains+Mono:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem("chamada-theme")==="night")document.documentElement.dataset.theme="night"}catch(e){}</script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./" aria-label="Ometto, home">
+    <svg class="brand-mark" viewBox="0 0 40 30" aria-hidden="true">
+      <path class="bm-stone" d="M4.2 13.6C4.4 6.9 11 3.2 20.4 3.4 29.6 3.6 36 7.4 35.8 14.4 35.6 21.6 29.4 26.4 20 26.2 10.4 26 4 21 4.2 13.6Z"/>
+      <path class="bm-shade" d="M35.8 14.4C35.6 21.6 29.4 26.4 20 26.2 10.4 26 4 21 4.2 13.6 5.4 19.4 11.6 23.2 20.2 23.3 28.4 23.4 34.2 19.8 35.8 14.4Z"/>
+      <text class="bm-face" x="20" y="18.6" text-anchor="middle">&gt;_0</text>
+    </svg>
+    <span id="brand-name">Ometto</span>
+    <span id="brand-ticker" class="ticker" hidden></span>
+  </a>
+  <div class="top-right">
+    <button id="mode" class="chip chip-mode" type="button" hidden></button>
+    <div id="coin" class="coin" hidden>
+      <button id="ca" class="chip" type="button"></button>
+      <a id="buy" class="chip chip-main" target="_blank" rel="noopener" hidden>Buy</a>
+    </div>
+    <button id="sound" class="round" type="button" aria-pressed="false" aria-label="Sound is off">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path class="w-on" d="M15.5 9.2a4 4 0 0 1 0 5.6M18 6.8a7.4 7.4 0 0 1 0 10.4"/><path class="w-off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+    <button id="theme" class="round" type="button" aria-label="Night mode">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.4 8.4 0 0 1 9.4 4a8.4 8.4 0 1 0 10.6 10.6Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="scene">
+  <section class="voice">
+    <div class="bubble" id="bubble">
+      <h1 class="say"><span id="say" aria-hidden="true">I&#39;m Ometto. Every validator adds a stone.</span><span id="say-live" class="sr-only" aria-live="polite">I&#39;m Ometto. Every validator adds a stone.</span></h1>
+    </div>
+    <p class="sentence" id="sentence"></p>
+  </section>
+
+  <section class="acts">
+    <div class="actions">
+      <button id="roll-btn" class="pill pill-main" type="button" hidden>Call the roll</button>
+      <button id="check-btn" class="pill" type="button" hidden>Check it yourself</button>
+      <button id="who" class="pill pill-quiet" type="button" data-place="about">Who are you?</button>
+    </div>
+    <form class="find" id="find" role="search" autocomplete="off">
+      <label for="find-q">Find your validator</label>
+      <input id="find-q" type="search" placeholder="A name, or a vote or identity address" spellcheck="false" autocapitalize="off" enterkeyhint="search">
+      <div class="find-out" id="find-out" aria-live="polite"></div>
+    </form>
+    <aside class="card" id="card" hidden aria-live="polite"></aside>
+  </section>
+
+  <section class="land" id="land" aria-label="Ometto on his cairn">
+    <span class="land-lab" id="land-lab" hidden></span>
+    <button class="sun" id="sun" type="button" data-place="answer">
+      <span class="disc"></span>
+      <span class="lbl"><b>The answer</b><span class="val" id="v-answer"></span></span>
+    </button>
+    <div class="ometto" id="ometto"></div>
+    <div class="ground-row">
+      <button class="place" type="button" data-place="list">
+        <svg class="glyph" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 18.5V8.5"/><path d="M3.5 3.5h10.3l2.7 2.5-2.7 2.5H3.5z"/></svg>
+        <b>The list</b><span class="val" id="v-list"></span>
+      </button>
+      <button class="place" type="button" data-place="check">
+        <svg class="glyph" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.5 6.5h7l1 9.5h-9z"/><path d="M8 3.5h4M10 3.5V1.8M5 18.2h10"/><circle class="flame" cx="10" cy="11.6" r="1.7"/></svg>
+        <b>Your check</b><span class="val" id="v-check"></span>
+      </button>
+      <button class="place" type="button" data-place="seal">
+        <svg class="glyph" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="8.2" r="5.6"/><path d="M7.4 13.2 6 18.4l2.6-1.2 1.4 1.8 1.4-1.8 2.6 1.2-1.4-5.2"/><path d="M8 8.4l1.4 1.4 2.8-2.8"/></svg>
+        <b>The seal</b><span class="val" id="v-seal"></span>
+      </button>
+    </div>
+  </section>
+
+  <section class="panel" id="panel" hidden>
+    <div class="panel-head">
+      <h2 id="panel-title"></h2>
+      <button class="round round-small" type="button" data-act="close-panel" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div id="panel-body"></div>
+  </section>
+</main>
+
+
+<footer class="foot">
+  <span>Read from Solana itself. Validator names are self-declared.</span>
+  <a id="foot-cert" target="_blank" rel="noopener">Certificate account</a>
+</footer>
+<noscript><p class="noscript">Ometto needs JavaScript: he reads the chain and checks the signature in your browser.</p></noscript>
+</body>
+</html>

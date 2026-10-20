@@ -1,0 +1,25 @@
+[package]
+name = "chamada"
+version = "0.1.0"
+edition = "2021"
+description = "Chamada (roll call): copies Alpenglow's genesis certificate into a coin's on-chain record, once, and records whether the copy landed in the first Alpenglow block."
+license = "MIT"
+publish = false
+
+[lib]
+name = "chamada"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+# same Pinocchio as Hunch (0.11.2 in Cargo.lock), no_std, no allocator
+pinocchio = { version = "0.11", default-features = false, features = ["cpi"] }
+
+# Deploy rent is paid per byte, so the release build optimises for size.
+[profile.release]
+opt-level = "s"
+lto = "fat"
+codegen-units = 1
+overflow-checks = true
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }

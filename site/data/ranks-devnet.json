@@ -1,0 +1,199 @@
+{
+ "network": "devnet",
+ "epoch": 1187,
+ "rankCount": 17,
+ "gridHash": "e7415cd6ffc6616877c84bf17abdb36ff0c05f115b721b7c775f60a21a3f322e",
+ "shredVersion": 7016,
+ "takenAtSlot": 512844167,
+ "note": "REHEARSAL (devnet), not mainnet. Built from today's devnet stakes (2026-10-19, epoch 1187), not the stakes of the certificate's epoch. Three vote accounts were excluded by hand because today's devnet stakes drifted since the certificate (slot 504148999): BZvY7GiJnpYzy4gVttGardT9snrx6VJAx2cdUEWgqLQE, DaRwg7fkGs6Dnbh2cwPwmcsottXCuLBafCAJuQKySZq7, 5QtjYNhy3PXcpBQaeM2UgcVricKBQn85hY3HSKvEWBVF. With them out the list has the certificate's 17 ranks and the BLS check passes.",
+ "final": false,
+ "takenAt": "2026-10-19T15:31:33.066Z",
+ "accountsReadAtSlot": 512844167,
+ "minVoteBalance": 19761200,
+ "totalStake": "165299824139174537",
+ "excluded": {
+  "noKeyZeroStakeOrLowBalance": 9,
+  "beyondTop2000": 0,
+  "keyDoesNotDecompress": 0,
+  "duplicateKeyOrNode": 0
+ },
+ "excludedByHand": [
+  "BZvY7GiJnpYzy4gVttGardT9snrx6VJAx2cdUEWgqLQE",
+  "DaRwg7fkGs6Dnbh2cwPwmcsottXCuLBafCAJuQKySZq7",
+  "5QtjYNhy3PXcpBQaeM2UgcVricKBQn85hY3HSKvEWBVF"
+ ],
+ "namesIncluded": true,
+ "rules": "agave v4.3.2 clone_and_filter_for_vat + BLSPubkeyToRankMap; stake = getVoteAccounts activatedStake; gridHash = sha256(vote32 || bls48 for rank 0..n-1)",
+ "ranks": [
+  {
+   "rank": 0,
+   "vote": "vgcDar2pryHvMgPkKaZfh8pQy4BJxv7SpwUG7zinWjG",
+   "node": "dv3qDFk1DTF36Z62bNvrCXe9sKATA6xvVy6A798xxAS",
+   "stake": "38984848219423580",
+   "stakePct": 23.5843,
+   "bls": "b428438f85c1c0532b5a4ee85e4218c909f97380ab0f956c846078b4847eb1784b0417210b5e7bcda35a02cc2ee07cb8",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 1,
+   "vote": "i7NyKBMJCA9bLM2nsGyAGCKHECuR2L5eh4GqFciuwNT",
+   "node": "dv2eQHeP4RFrJZ6UeiZWoc3XTtmtZCUKxxCApCDcRNV",
+   "stake": "38982678377990770",
+   "stakePct": 23.583,
+   "bls": "8cc3b4cdf80c0ea1c27ce93bcbb201cf2332398004d534bcf7a68a5a125a20615a6a0fd00a1337770ed1aa801f03ea85",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 2,
+   "vote": "23AoPQc3EPkfLWb14cKiWNahh1H9rtb3UBk8gWseohjF",
+   "node": "dv4ACNkpYPcE3aKmYDqZm9G5EB3J4MRoeE7WNDRBVJB",
+   "stake": "38982371319681310",
+   "stakePct": 23.5828,
+   "bls": "b6f482d7598fb13e063ec522280b1642c147cce4583e2f8dc4c4f458b2810a303418fd2d9d1e680459da6adaa1110d70",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 3,
+   "vote": "5ZWgXcyqrrNpQHCme5SdC5hCeYb2o3fEJhF7Gok3bTVN",
+   "node": "dv1ZAGvdsz5hHLwWXsVnM94hWf1pjbKVau1QVkaMJ92",
+   "stake": "38974860826214936",
+   "stakePct": 23.5782,
+   "bls": "9251a1b8436c58e44f6f4aac43a5b3471daeeff4d0dcb2e4481bc8d4d615a41531a3cf536f3b78b5e9c19b2184e40d0e",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 4,
+   "vote": "7AETLyAGJWjp6AWzZqZcP362yv5LQ3nLEdwnXNjdNwwF",
+   "node": "Cw6X5R68muAyGRCb7W8ZSP2YbaRjwMs1t5sBEPkhdwbM",
+   "stake": "3711061740453608",
+   "stakePct": 2.245,
+   "bls": "94456ad6f5f436509af0f4b15737eb71507d6606a8d9921365cdfc27a68029c07aa239b52f7fbb1dd4a67c7b93b036ab",
+   "name": "Your Validator Name",
+   "icon": "https://yourdomain.com/favicon.png"
+  },
+  {
+   "rank": 5,
+   "vote": "2u83Dx5qPV4QnujjJQv8v2SoqG1ixuAxPK5Jwhtkovd1",
+   "node": "BrX9Z85BbmXYMjvvuAWU8imwsAqutVQiDg9uNfTGkzrJ",
+   "stake": "2000701123808356",
+   "stakePct": 1.2103,
+   "bls": "b08f69e3b10709f09f0eae7dac2ca40592a5eb08b9eef4db058b63c91dca00e36cc7a789ea17f57f02c6ca65209fba02",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 6,
+   "vote": "2f9C9AU8nFRKUub8NHToNiZzcwmYiNeipVuP8akKgRVv",
+   "node": "2UWuPRCUZHgDt4PdiarRx8YPBD5gUMaVA5EcPeg1sVzL",
+   "stake": "750013476646920",
+   "stakePct": 0.4537,
+   "bls": "91b4141441f7db273e8616a853e6c6a1ef45a63e1098b6d6154ada535ed5a87aa5f333ea3455f4505507ec019dc80f5d",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 7,
+   "vote": "B6kMs74PL2invrEmeyZSXiH4Rim3VmHRDJBuUcsNAoGE",
+   "node": "JDHmpeiTjYbHkaShE29EdNLtuRRYR5zKuJUmBK5jee2G",
+   "stake": "750004388484840",
+   "stakePct": 0.4537,
+   "bls": "af05196bc9943e7d67639c9908f73c5c1993f4511432bd8c612fad7ea14cdbb331512b790e149b8cb6ad94b6ae2c11e3",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 8,
+   "vote": "APsEUZJjrb58KCS6z7rJJAmXB76b9bfAigjDzG242xhr",
+   "node": "5HNiQFG5uhpL9Ciodz9hcKsvuecLRfgTAfZedmCXQgFw",
+   "stake": "626729666242527",
+   "stakePct": 0.3791,
+   "bls": "b37c1223bf0d06cf1b17ba66f2754fae82d2a2554509430f1d9bda21d4c7a6df6dbd0e019167ee804d9a0f03ef52e780",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 9,
+   "vote": "8KfPgKfeTp1Pyw1utAoek5bTDqMCt6a3oWrYKn2bETZb",
+   "node": "3zvXem8vqvDYos6BKu66FV84tmDdQwgLxYSempy8tSrs",
+   "stake": "517328431309511",
+   "stakePct": 0.3129,
+   "bls": "944cdf74dd88bead361f521cf206208c16fb2b10a1b68606a2b976614ea66ad237118b34775f40ed204fb8b403ce4f71",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 10,
+   "vote": "shfttEZqZQTYtvAPkScZVh98BSVZYpUvpBQM5ks3LGq",
+   "node": "ShFtNd4pzXiC7T7mr7gg2hn33X5BSskQRBpErKPai98",
+   "stake": "480032658749255",
+   "stakePct": 0.2904,
+   "bls": "94318344b3644899d11f2a038f8f1c0e98396cf141edfb6ed3b1a02b3a75d4d6dccd62b3a4aaa56015444f620930a5f7",
+   "name": "blueshift",
+   "icon": "https://blueshift.gg/branding/blueshift.png"
+  },
+  {
+   "rank": 11,
+   "vote": "DSQ5BLBM6UcuWP2SNpmf3TJeMbqbwTFGzVqFGufyNCgk",
+   "node": "97YUjL2EK42M6jG5VA4fKuVxGXDfxsC5Zawd9haLQJGk",
+   "stake": "294610828160028",
+   "stakePct": 0.1782,
+   "bls": "9532fabc0ee0a423cc30be588aef8ec7ad6d3fcf09df6b4e5a3ae05506cb99d2dfaba4d0c86f43e5dbc7fa455aa509b3",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 12,
+   "vote": "FwR3PbjS5iyqzLiLugrBqKSa5EKZ4vK9SKs7eQXtT59f",
+   "node": "FDQHfbqgSUk94XKFKWu6E8qidL7bwGEXDPzAoTVTXEDm",
+   "stake": "210859381516559",
+   "stakePct": 0.1275,
+   "bls": "ab54682f32a3f3c9234a1b445cbb2ea4ba4c30ead246363cd778f9e285421559e781dbce1ec625f7fb8d49b9c57607ca",
+   "name": "Kiln devnet validator",
+   "icon": "https://prod-validators.nyc3.digitaloceanspaces.com/jv4jjydgv6uiy8m376t96frfc7g3"
+  },
+  {
+   "rank": 13,
+   "vote": "PiNEr6WcnMfiZivpJJbyaS45vx9TTC1qE19Y8Z8S6ts",
+   "node": "piNepRbvYaC33td5tdPVuWo9WwH6TE731AWanLCwFPP",
+   "stake": "31262949487666",
+   "stakePct": 0.0189,
+   "bls": "8f86f638c71abcccab5fc93846f79e11787a0530fa34f31e82dbad7d5899b6e4987739af50f40ccba504efdacb26ba4d",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 14,
+   "vote": "ECuwzjAEg7kPVBmmW7xa6Wz9xkK5pbN8cTn4SCdp5PPp",
+   "node": "CKMqpoZzrqeobgVMsS9Es8UpRUjdhT3tA7CTPoXC3u6i",
+   "stake": "1145345937199",
+   "stakePct": 0.0006,
+   "bls": "a6d26aca78436fb3f8828f85a5112838c42cb6432299272d4d39c080017195e0943b38e5c3b947722a438fcdc74ee55a",
+   "name": "BitGo",
+   "icon": null
+  },
+  {
+   "rank": 15,
+   "vote": "BK2r4FZ6x8MJCaUS92Jsk8h4vhKsEpsXz2w9P3YtjAv4",
+   "node": "5FRJrLMUVSKK63fTm5tSpAfVnwvBbdifknXvgFfgET7e",
+   "stake": "1007002877872",
+   "stakePct": 0.0006,
+   "bls": "a884b7c00f6924884a90716e71257514bc95a1ed089606f23441796f478edff4ec7b17d8d18a866d032d9df10ab5eeee",
+   "name": null,
+   "icon": null
+  },
+  {
+   "rank": 16,
+   "vote": "deepPy86gApSci6B3QHsncudzQBMNX8f6Wwwsz64bUz",
+   "node": "deepEMPe2gRjCPQ4E1VzmbDTNXt7skZie7vJbWKnpUH",
+   "stake": "308402189600",
+   "stakePct": 0.0001,
+   "bls": "941700971fcbd29492aeea98e719db5be3a7216fc2a12fb5ac4b9c8b03a7bd2009f3c2193915292b5693977b21cfd008",
+   "name": "DeepStake",
+   "icon": "https://deepstake.info/deepstake_logo.png"
+  }
+ ]
+}

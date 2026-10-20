@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+launch/
+NOTES.md
+site/variants/
+site-tools/screens/
+programs/tests/devnet-result.json
+*.log

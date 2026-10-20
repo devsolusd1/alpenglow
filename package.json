@@ -1,0 +1,8 @@
+{
+  "name": "chamada",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node site-tools/serve.mjs"
+  }
+}
