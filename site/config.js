@@ -3,11 +3,11 @@
 export const CONFIG = {
   name: "AlpenSol",
   ticker: "ALPEN",      // shown with a $
-  mint: null,            // the coin's mint address on mainnet
-  programId: null,       // the Chamada program on mainnet (record PDA ["chamada", mint])
+  mint: "JM4jSRgsjuieyWijFsnEJQsBFri8e361taskyrALPEN",            // the coin's mint address on mainnet
+  programId: "CGHeTh9JYyQRggAFD9TGf3gaQUCA8pkQMNhw1qAHqUt3",       // the Chamada program on mainnet (record PDA ["chamada", mint])
   network: "mainnet-beta",
-  rehearsal: true,       // true: the page replays the devnet certificate (17 squares), labelled as such
-  buyUrl: null,          // where "Buy" goes once the coin exists; hidden while null
+  rehearsal: false,       // true: the page replays the devnet certificate (17 squares), labelled as such
+  buyUrl: "https://jup.ag/tokens/JM4jSRgsjuieyWijFsnEJQsBFri8e361taskyrALPEN",          // where "Buy" goes once the coin exists; hidden while null
   siteUrl: "https://www.alpensol.fun",         // "https://<domain>" once the domain is known, then run node site-tools/set-domain.mjs:
                          // it writes the absolute share-image addresses into index.html and metadata.json
   // Rehearsal only: a devnet program and test mint whose record the page reads for the seal panel.
