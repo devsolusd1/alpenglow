@@ -2,7 +2,7 @@
 // the page hides name, ticker, contract address and buy link while they are null.
 export const CONFIG = {
   name: "AlpenSol",
-  ticker: "ALPENSOL",      // shown with a $
+  ticker: "ALPEN",      // shown with a $
   mint: null,            // the coin's mint address on mainnet
   programId: null,       // the Chamada program on mainnet (record PDA ["chamada", mint])
   network: "mainnet-beta",

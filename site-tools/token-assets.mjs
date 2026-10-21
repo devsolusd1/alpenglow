@@ -80,7 +80,7 @@ export async function chrome() {
       // wait for the font stylesheet, then for the two faces the pictures use, then for the images
       await evalJs(`(async () => {
         await Promise.all([...document.querySelectorAll('link[rel=stylesheet]')].map((l) => l.sheet ? 0 : new Promise((r) => { l.onload = l.onerror = r; })));
-        await Promise.all(['800 100px "M PLUS Rounded 1c"', '600 40px Figtree', '400 14px Figtree', '800 40px "JetBrains Mono"'].map((f) => document.fonts.load(f, 'AlpenSol $ALPENSOL Ometto >_0^-.xoO')));
+        await Promise.all(['800 100px "M PLUS Rounded 1c"', '600 40px Figtree', '400 14px Figtree', '800 40px "JetBrains Mono"'].map((f) => document.fonts.load(f, 'AlpenSol $ALPEN Ometto >_0^-.xoO')));
         await document.fonts.ready;
         await Promise.all([...document.images].map((i) => i.decode().catch(() => null)));
         await new Promise((r) => setTimeout(r, 250));
