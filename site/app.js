@@ -26,7 +26,7 @@ const WAKE = 82; // percent of the stake at which he wakes
 const slotFromClock = () => 458877441 + (Date.now() - Date.parse("2026-10-19T15:07:31Z")) / MAINNET.pace;
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const phone = () => matchMedia("(max-width: 900px)").matches;
-const INTRO = "I'm Alpen. Every validator adds a stone.";
+const INTRO = "I'm AlpenSol. Every validator adds a stone.";
 
 // ---------- small helpers ----------
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -602,7 +602,7 @@ function panelHtml(name) {
     return out;
   }
   if (name === "about") {
-    return `<p>I'm Alpen. On mountains, people who pass a cairn on a trail or a summit add one stone to it.</p>
+    return `<p>I'm AlpenSol. On mountains, people who pass a cairn on a trail or a summit add one stone to it.</p>
       <p>Here the passers are Solana's validators, on the morning Alpenglow starts. Alpenglow is the new way Solana agrees on blocks, named after the glow on summits just before sunrise. At the switch, the validators sign one certificate together.</p>
       <p>Each of them is one stone in the cairn under me, the biggest stake at the top. Lit, it signed. Dark, it did not. I am the stone on top. When ${WAKE}% of the stake has signed, I wake.</p>
       <p>Do not take my word for it. The certificate is on chain, and the check runs in your browser.</p>`;
