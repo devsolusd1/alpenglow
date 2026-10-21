@@ -407,6 +407,15 @@ code, .addr { font-family: var(--mono); font-size: 13px; font-weight: 500; overf
   .pill { height: 42px; padding: 0 15px; font-size: 14.5px; }
   .place .val { display: none; }
 }
+/* phone, once the coin exists: the CA and Buy chips get a row of their own under the name */
+@media (max-width: 600px) {
+  .top.has-coin { flex-wrap: wrap; justify-content: flex-start; column-gap: 6px; row-gap: 10px; }
+  .top.has-coin .top-right { display: contents; }
+  .top.has-coin .brand { margin-right: auto; }
+  .top.has-coin .coin { order: 1; flex: 1 0 100%; }
+  .top.has-coin #ca { flex: 1 1 auto; justify-content: center; }
+  .top.has-coin #buy { flex: none; padding: 0 22px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .om-tilt, .om-hop, .om-bob, .om-face { animation: none !important; transition: none !important; }
   .om.cursor .fc1, .om.asleep .om-z .z { animation: none !important; }

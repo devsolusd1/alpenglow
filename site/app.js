@@ -848,6 +848,7 @@ function renderTop() {
   if (CONFIG.ticker) { const t = $("#brand-ticker"); t.textContent = "$" + String(CONFIG.ticker).replace(/^\$/, ""); t.hidden = false; }
   if (CONFIG.mint) {
     $("#coin").hidden = false;
+    $(".top").classList.add("has-coin"); // on a phone the CA and Buy chips then take a row of their own
     const ca = $("#ca");
     ca.textContent = "CA " + short(CONFIG.mint);
     ca.onclick = async () => { try { await navigator.clipboard.writeText(CONFIG.mint); ca.textContent = "copied"; setTimeout(() => (ca.textContent = "CA " + short(CONFIG.mint)), 1400); } catch { /* refused */ } };

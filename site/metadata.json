@@ -2,14 +2,14 @@
   "name": "AlpenSol",
   "symbol": "ALPENSOL",
   "description": "AlpenSol is the top stone of a cairn of Solana validators, one pebble each, ranked by stake. The pebbles light for the validators that sign Alpenglow's genesis certificate, and anyone can seal that certificate into this coin's record on chain.",
-  "image": "https://alpensol.fun/token.png",
-  "external_url": "https://alpensol.fun/",
-  "website": "https://alpensol.fun/",
+  "image": "https://www.alpensol.fun/token.png",
+  "external_url": "https://www.alpensol.fun/",
+  "website": "https://www.alpensol.fun/",
   "extensions": {
-    "website": "https://alpensol.fun/"
+    "website": "https://www.alpensol.fun/"
   },
   "properties": {
     "category": "image",
-    "files": [{ "uri": "https://alpensol.fun/token.png", "type": "image/png" }]
+    "files": [{ "uri": "https://www.alpensol.fun/token.png", "type": "image/png" }]
   }
 }
